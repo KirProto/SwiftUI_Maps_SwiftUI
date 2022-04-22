@@ -52,7 +52,7 @@ struct MapView: UIViewRepresentable {
         }
         
         func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
-            let view = MKAnnotationView(annotation: annotation, reuseIdentifier: nil)
+            let view = MKPinAnnotationView(annotation: annotation, reuseIdentifier: nil)
             view.canShowCallout = true
             return view
         }
